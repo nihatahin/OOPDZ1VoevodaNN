@@ -1,17 +1,17 @@
 package task;
 public class name {
     private String nm;
-    
+    //Name creation
     name(String val)
     {
         nm = val;
     }
-    
+    //Name sending
     public String getName()
     {
         return nm;
     }
-
+    //Search string in name algorithm
     public boolean isStrInName(String find_val)
     {
         int len_nm = nm.length();

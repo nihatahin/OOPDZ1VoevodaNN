@@ -4,7 +4,7 @@ public class film {
     ///////////////////////////////
     //Poles////////////////////////
     ///////////////////////////////
-    private name filmName;
+    name filmName;
     private String director;
     private String scriptWriter;
     private String composer;
