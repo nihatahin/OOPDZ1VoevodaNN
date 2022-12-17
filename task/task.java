@@ -16,9 +16,11 @@ public class task {
         first_lib.append(new film("Joly Bambino", "Curtoni Uberatti", "Adriano Behavi", "Adriano Chelentano", "Italy", "comedy", 2022, 100));
         first_lib.append(new film("Alexandr Petrovskiy", "Danya Kozlovskiy", "Danya Kozlovskiy", "Danya Kozlovskiy", "India", "horror", 2021, 112));
 
-        System.out.println(first_lib.getAll());  
-
-        System.out.println(first_lib.getByString("er"));
+        System.out.println(first_lib.getAll());
+        
+        String findPart = "er";
+        System.out.println(String.format("Film names result by search word \"%s\".", findPart));
+        System.out.println(first_lib.getByString(findPart));
     }
     
     
