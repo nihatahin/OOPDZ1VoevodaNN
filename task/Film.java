@@ -1,10 +1,10 @@
 package task;
 
-public class film {
+public class Film {
     ///////////////////////////////
     //Poles////////////////////////
     ///////////////////////////////
-    name filmName;
+    Name filmName;
     private String director;
     private String scriptWriter;
     private String composer;
@@ -13,12 +13,10 @@ public class film {
     private int year;
     private int lengthMin;
     ///////////////////////////////
-
-    ///////////////////////////////
     //Methods//////////////////////
     ///////////////////////////////
-    film(String fname, String dir, String scWr, String comp, String cntr, String janr, int y, int mins) {
-        filmName = new name(fname);
+    Film(String fname, String dir, String scWr, String comp, String cntr, String janr, int y, int mins) {
+        filmName = new Name(fname);
         director = new String(dir);
         scriptWriter = new String(scWr);
         composer = new String(comp);
@@ -28,8 +26,7 @@ public class film {
         lengthMin = mins;
     }
     ///////////////////////////////
-    public String getCard()
-    {
+    public String getCard() {
         StringBuilder card = new StringBuilder(500);
 
         card.append(String.format("Name:\t\t\t%s\n", filmName.getName()));
